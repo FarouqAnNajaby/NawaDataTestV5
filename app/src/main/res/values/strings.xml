@@ -6,4 +6,8 @@
     <string name="Submit">Submit</string>
     <string name="insert_word">Insert word</string>
     <string name="reset">Reset</string>
+    <string name="minimun_bus">Minimum bus required is :</string>
+    <string name="input_number_family">Input the number of families :</string>
+    <string name="member_family">Input the number of members in the family :</string>
+    <string name="soal_2">Question 2</string>
 </resources>

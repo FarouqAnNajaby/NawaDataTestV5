@@ -107,6 +107,99 @@
             android:layout_marginTop="16dp"
             android:textStyle="bold"/>
 
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/black"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/tvHasilKonsonan"/>
+
+        <TextView
+            android:id="@+id/tvSoal2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/soal_2"
+            android:fontFamily="sans-serif"
+            android:textSize="22sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view"
+            android:layout_marginTop="16dp"
+            android:textStyle="bold"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edtCountFamily"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tvSoal2"
+            android:layout_marginTop="16dp"
+            android:hint="@string/input_number_family"
+            android:inputType="number"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edtMember"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/edtCountFamily"
+            android:layout_marginTop="16dp"
+            android:hint="@string/member_family"
+            android:inputType="text"
+            android:digits="0,1,2,3,4,5,6,7,8,9,
+"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonHasil2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/edtMember"
+            android:layout_marginTop="16dp"
+            android:text="@string/Submit"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonReset2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/edtMember"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/reset"
+            app:layout_constraintStart_toEndOf="@id/buttonHasil2"/>
+
+        <TextView
+            android:id="@+id/tvHasil2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/output_1"
+            app:layout_constraintTop_toBottomOf="@+id/buttonHasil2"
+            android:fontFamily="sans-serif"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="16dp"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tvQuestion2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/minimun_bus"
+            app:layout_constraintTop_toBottomOf="@+id/tvHasil2"
+            android:fontFamily="sans-serif"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="16dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tvAn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text=" 2"
+            android:fontFamily="sans-serif"
+            app:layout_constraintTop_toBottomOf="@+id/tvHasil2"
+            app:layout_constraintStart_toEndOf="@+id/tvQuestion2"
+            android:layout_marginTop="16dp"
+            android:textStyle="bold"/>
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </ScrollView>
