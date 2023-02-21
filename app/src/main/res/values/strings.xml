@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">NawaData</string>
+    <string name="soal_1">Question 1</string>
+    <string name="output_1">Output 1</string>
+    <string name="vowel_characters">Vowel Characters :</string>
+    <string name="Submit">Submit</string>
+    <string name="insert_word">Insert word</string>
+    <string name="reset">Reset</string>
+</resources>
